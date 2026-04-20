@@ -1,4 +1,4 @@
-# Stash - Prouct Brief
+# Stash - Product Brief
 > Обмен файлами без регистрации, без слежки, с self-hosting возможностью.
 
 ---
