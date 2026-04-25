@@ -10,10 +10,10 @@ import (
 )
 
 type fileRepo struct {
-	db *pgxpool.Conn
+	db *pgxpool.Pool
 }
 
-func NewFileRepo(db *pgxpool.Conn) file.FileRepository {
+func NewFileRepo(db *pgxpool.Pool) file.FileRepository {
 	return &fileRepo{db}
 }
 

@@ -9,10 +9,10 @@ import (
 )
 
 type roomRepo struct {
-	db *pgxpool.Conn
+	db *pgxpool.Pool
 }
 
-func NewRoomRepo(db *pgxpool.Conn) room.RoomRepository {
+func NewRoomRepo(db *pgxpool.Pool) room.RoomRepository {
 	return &roomRepo{db}
 }
 

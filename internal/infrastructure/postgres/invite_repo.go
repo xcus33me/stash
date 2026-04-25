@@ -9,10 +9,10 @@ import (
 )
 
 type inviteRepo struct {
-	db *pgxpool.Conn
+	db *pgxpool.Pool
 }
 
-func NewInviteRepo(db *pgxpool.Conn) invite.InviteLinkRepository {
+func NewInviteRepo(db *pgxpool.Pool) invite.InviteLinkRepository {
 	return &inviteRepo{db}
 }
 
